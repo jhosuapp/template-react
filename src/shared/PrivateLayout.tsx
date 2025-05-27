@@ -3,8 +3,8 @@ import { Outlet } from "react-router-dom";
 const PrivateLayout = ():React.JSX.Element => {
     return (
         <main>
-            <section className="flex justify-center fixed top-0 left-0 w-full bg-white py-5">
-                <p className="text">Private layout</p>
+            <section className="flex justify-center fixed top-0 left-0 w-full bg-primary py-5">
+                <p className="text-white">Private layout</p>
             </section>
             <Outlet />
         </main>

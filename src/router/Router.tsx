@@ -1,7 +1,7 @@
 import { createBrowserRouter, redirect } from 'react-router-dom';
 import { Layout } from '../shared';
 import { anonymous } from '../guards';
-import { TestView } from '../this-is-a-feature/views/test.view';
+import { TestView } from '../features';
 import { HOME_PATH } from './routes.constant';
 
 const Router = () => {
