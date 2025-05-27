@@ -1,54 +1,42 @@
-# React + TypeScript + Vite
+# React 18 Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a project built with **React 18**.
 
-Currently, two official plugins are available:
+## 🚀 Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js >= 18.x  
+- npm >= 8.x
 
-## Expanding the ESLint configuration
+> It's recommended to use [nvm](https://github.com/nvm-sh/nvm) to manage Node versions. If you're using `nvm`, you can run `nvm use` (if a `.nvmrc` file is present).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Environment Variables
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+This project uses environment variables. You can refer to the `.env.example` file located in the root directory to see the required variables.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+To set up your environment, create a `.env` file based on the example and fill in the appropriate values.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Project Structure
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+/
+├── src/               # Source code
+├── public/            # Public assets
+├── .env.example       # Example environment variables
+└── package.json       # Dependencies and scripts
+
+## 📦 Setup and Usage
+
+Clone the repository and run the following commands:
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Run unit tests
+npm run test
+
