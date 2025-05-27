@@ -1,7 +1,8 @@
 import { createBrowserRouter, redirect } from 'react-router-dom';
 import { Layout } from '../shared';
 import { anonymous } from '../guards';
-import TestView from '../this-is-a-feature/views/test.view';
+import { TestView } from '../this-is-a-feature/views/test.view';
+import { HOME_PATH } from './routes.constant';
 
 const Router = () => {
     return createBrowserRouter(
@@ -20,8 +21,8 @@ const Router = () => {
                 children: [
                     {
                         index: true,
-                        id: 'login',
-                        path: '/login',
+                        id: 'home',
+                        path: HOME_PATH,
                         loader: anonymous(),
                         element: <TestView />,
                         HydrateFallback: () => <div>Loading...</div>,

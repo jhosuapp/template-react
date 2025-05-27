@@ -1,11 +1,12 @@
-import React from "react"
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
 
 const PrivateLayout = ():React.JSX.Element => {
     return (
         <main>
-            <p>Hola mundo soy un layout privado</p>
-            <Outlet></Outlet>
+            <section className="flex justify-center fixed top-0 left-0 w-full bg-white py-5">
+                <p className="text">Private layout</p>
+            </section>
+            <Outlet />
         </main>
     )
 }

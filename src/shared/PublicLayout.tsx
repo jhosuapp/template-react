@@ -1,10 +1,11 @@
-import React from "react"
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
 
 const PublicLayout = ():React.JSX.Element => {
     return (
         <main>
-            <p>Hola mundo soy un layout public</p>
+            <section className="flex justify-center fixed top-0 left-0 w-full bg-white py-5">
+                <p className="text">Public layout</p>
+            </section>
             <Outlet />
         </main>
     )
