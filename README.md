@@ -41,4 +41,7 @@ To set up your environment, create a `.env` file based on the example and fill i
 
 This project follows a **feature-based architecture**. Each feature/module has its own folder containing related components, hooks, services, and styles, which helps improve scalability and maintainability.
 
-- src/features/ # Feature-based modules (e.g., auth, dashboard, user)
+- /src/features/ # Feature-based modules (e.g., auth, dashboard, user)
+- /src/shared/ # Global components
+- /src/stores/ # Global stores
+- /src/api/ # Global api
